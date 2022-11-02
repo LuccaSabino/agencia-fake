@@ -1,0 +1,241 @@
+/* Sempre colocar o (*) e (body) no começo de todo codigo css */
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------------------------------------------------------- */
+
+
+/* menu/navbar */
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+
+    height: 100px;
+    background: white;
+
+}
+
+.logo {
+    flex: 20%;
+    text-align: left;
+    margin-left: 10%;
+
+    /* border: 1px solid red; */
+}
+
+.logo h1 {
+    font-family: 'Lobster', cursive;
+    color: #180F4A;
+    font-size: 34px;
+}
+
+
+.menu {
+    flex: 60%;
+    padding: 20px;
+    text-align: right;
+    margin-right: 10%;
+    /* border: 1px yellow solid; */
+}
+
+.menu a {
+    color: #180F4A;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover {
+    color: #FF2978;
+    border-top: 4px solid #180F4A;
+    transition: 0.2s;
+
+}
+
+#botao {
+    background: #180F4A;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 20px;
+    margin-right: 10%;
+    margin-left: 5%;
+
+}
+
+#botao:hover {
+    border: none;
+    background: #FF2978;
+    transition: 0.2s;
+}
+
+/* header */
+
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+
+
+    background: white;
+}
+
+.headline {
+    flex: 40%;
+    margin-left: 10%;
+
+
+    /* border: 1px solid black; */
+}
+
+.headline h2 {
+    font-weight: 900;
+    font-size: 20px;
+    color: #180F4A;
+    padding: 0;
+    margin: 0;
+}
+
+.headline p {
+    color: gray;
+    text-align: left;
+}
+
+.contact-btn {
+    display: inline-block;
+    background: #FF2978;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+.contact-btn:hover {
+    background: #180F4A;
+    transition: 0.2s;
+
+}
+
+.img-headline {
+    margin-right: 10%;
+    flex: 40%;
+    text-align: center;
+
+    /* border: 1px solid deeppink; */
+}
+
+
+/* seçoes da pagina */
+
+section {
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 5%;
+
+    /* border: 1px solid black; */
+}
+
+section h2 {
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    color: #180F4A;
+}
+
+.servicos {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border-radius: 20px;
+    cursor: pointer;
+
+
+    border: 1px solid #FF2978;
+}
+
+.texto-oculto {
+    display: none;
+}
+
+
+.card:hover {
+    background: #FF2978;
+    color: white;
+    padding: 50px;
+    transition: 0.2s;
+}
+
+.card:hover img {
+    display: none;
+}
+
+.card:hover .card-text {
+    display: none;
+}
+
+.card:hover .texto-oculto {
+    display: block;
+}
+
+
+/* rodape da pag */
+
+footer {
+    margin-top: 100px;
+    height: 400px;
+    background-image: linear-gradient(180deg, #180F4A, #090422, black);
+    text-align: center;
+    border-top: 5px solid #FF2978;
+}
+
+.logo-rodape {
+    padding: 100px;
+
+
+}
+
+.agencia {
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 34px;
+}
+
+.whats {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+}
+
+/* dicas
+
+sempre colocar border nos elementos pra visualizar o tamanho e ocupaçao dele na pag e tbm apos finalizar dx os border comentados para futuras ediçoesra 
+
+*/
